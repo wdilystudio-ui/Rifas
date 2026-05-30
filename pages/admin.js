@@ -302,7 +302,7 @@ const response = await fetch(`/api/admin/reservations?${searchParams.toString()}
       return;
     }
 
-    if (prizeImageFile.size < 200 * 1024) {
+    if (prizeImageFile.size < 96 * 1024) {
       setPrizeImageMessage("❌ A imagem precisa ter no mínimo 200 KB.");
       return;
     }
